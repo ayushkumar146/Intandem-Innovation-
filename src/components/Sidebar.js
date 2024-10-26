@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = ({ pins, setPins }) => {
   const handleDelete = (index) => {
-    if (window.confirm('Are you sure you want to delete this pin?')) {
+    if (window.confirm('Do you want to delete this pin?')) {
       setPins((prevPins) => prevPins.filter((_, i) => i !== index));
     }
   };
